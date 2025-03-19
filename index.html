@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ramón Rodríguez
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          rmrm@momramail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="images/Photo.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Ramón Rodríguez! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a industrial designer with 20 years of experience in furniture design and interior design.
+         	I have worked in several furniture factories and on small interior design projects. 
+            The tools I use most are AutoCAD, 3D Max and the Adobe suite.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images/Autocad-Logo.png"/>
+          <h6>AutoCAD</h6>
+          <p>20 years experience</p>
+        </div>
+		  
+        <div class="skill">
+          <img src="images/3ds-max-logo.png"/>
+          <h6>3D Max</h6>
+          <p>20 years experience</p>
+        </div>  
+
+		  <div class="skill">
+          <img src="images/fusion_logo.png"/>
+          <h6>Fusion 360</h6>
+          <p>20 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images/rhinoceros_logo.webp"/>
+          <h6>Rhinoceros</h6>
+          <p>20 years experience</p>
+        </div>  
+
+	    <div class="skill">
+          <img src="images/photoshop_logo.png"/>
+          <h6>Photoshop</h6>
+          <p>20 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images/illustrator_logo.png"/>
+          <h6>Illustrator</h6>
+          <p>20 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Furniture Designer</h3>
+            <ul>
+              <li>Responsible for the design of new furniture sets in accordance with international styles.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Interior Designer</h3>
+            <ul>
+              <li>Development of interior design projects for private homes and apartments.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Inflatable Games Designer</h3>
+            <ul>
+              <li>Development of inflatable game design projects such as bouncy castles and slides.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ramón is very skilled at developing new qualities in furniture design and quickly grasps changes in international furniture design styles. He has excellent teamwork skills and is an excellent leader. He is always innovating at different stages of the design process.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ramón is deeply knowledgeable about international interior design styles and trends, as well as construction techniques and methods, and he always pays attention to every detail to ensure everything is perfect. I would work with him again on any future design project.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Having Ramón on board is invaluable in all phases of new product development. He has deep industry knowledge and is deeply committed to it. He's a very valuable asset to an organization! 
+          <span>&#8221;</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks You!</h3>
+      <button onclick="showPopup(true)">OK</button>
+    </div>
+  </body>
+</html>
